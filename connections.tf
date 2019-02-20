@@ -1,7 +1,7 @@
 provider "google" {
     credentials = "${file("../gcp_acc.json")}"
     project = "terraform-practice-232212"
-    region = "europe-west3-a"
+    region = "europe-west3"
 }
 
 provider "aws" {
