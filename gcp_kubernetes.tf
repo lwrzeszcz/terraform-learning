@@ -1,15 +1,15 @@
+/*
 resource "google_container_cluster" "kubey" {
     name = "kubeycluster"
     zone = "europe-west3-a"
     initial_node_count = "1"
 
     additional_zones = [
-        "europe-west3-b",
         "europe-west3-c"
         ]
 
     master_auth {
-        password = "password"
+        password = "passwordpassword"
         username = "username"
     }
 
@@ -28,4 +28,4 @@ resource "google_container_cluster" "kubey" {
         tags = ["dev","work"]
     }
 }
-
+*/

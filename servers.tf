@@ -1,7 +1,8 @@
 resource "google_compute_instance" "firstserver" {
     name = "thefirstserver"
     machine_type = "n1-standard-1"
-    zone = "europe-west3-a"
+    zone = "europe-west3-c"
+
 
     boot_disk {
         initialize_params {
@@ -25,6 +26,7 @@ resource "google_compute_instance" "firstserver" {
         scopes = ["userinfo-email", "compute-ro", "storage-ro"]
     }
 }
+
 
 data "aws_ami" "ubuntu" {
     most_recent = true
